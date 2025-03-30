@@ -36,12 +36,12 @@ document.getElementById("bannerUpload").addEventListener("change", (e) => {
     const reader = new FileReader();
     reader.onload = function (e) {
       headerPreview.style.backgroundImage = `url(${e.target.result})`;
-      headerPreview.style.backgroundColor = ""; // Remove a cor de fundo (se houver)
+      headerPreview.style.backgroundColor = ""; 
     };
-    reader.readAsDataURL(bannerUpload); // Lê a imagem como URL base64
+    reader.readAsDataURL(bannerUpload);
   } else {
-    headerPreview.style.backgroundImage = ""; // Se não há imagem, remova a imagem de fundo
-    headerPreview.style.backgroundColor = bgColor; // Mantém a cor de fundo
+    headerPreview.style.backgroundImage = "";
+    headerPreview.style.backgroundColor = bgColor;
   }
 });
 
@@ -53,11 +53,11 @@ document.getElementById("iconUpload").addEventListener("change", (e) => {
     const iconReader = new FileReader();
     iconReader.onload = function (e) {
       headerIcon.src = e.target.result;
-      headerIcon.style.display = "block"; // Exibe o ícone
+      headerIcon.style.display = "block";
     };
-    iconReader.readAsDataURL(iconUpload); // Lê a imagem como URL base64
+    iconReader.readAsDataURL(iconUpload);
   } else {
-    headerIcon.style.display = "none"; // Se não há ícone, esconda o ícone
+    headerIcon.style.display = "none";
   }
 });
 
