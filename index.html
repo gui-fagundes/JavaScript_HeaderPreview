@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="headerPreview">
+      <div id="headerContent">
+        <img
+          id="headerIcon"
+          src=""
+          alt="Ícone"
+          style="display: none; width: 40px; height: 40px; margin-right: 10px"
+        />
+        <h2 id="headerTitle">Gerador de Cabeçalho</h2>
+      </div>
+    </div>
+    <div id="editor-configs">
+      <h1 id="config-title">Configurações do Cabeçalho</h1>
+
+      <form id="configForm">
+        <div>
+          <label for="bgColor">Cor de Fundo:</label>
+          <input type="color" id="bgColor" name="bgColor" value="#4CAF50" />
+        </div>
+        <div>
+          <label for="textColor">Cor do Texto:</label>
+          <input type="color" id="textColor" name="textColor" value="#FFFFFF" />
+        </div>
+        <div>
+          <label for="fontSize">Tamanho da Fonte: </label>
+          <input
+            type="number"
+            id="fontSize"
+            name="fontSize"
+            value="24"
+            min="10"
+            max="50"
+          />
+        </div>
+        <div>
+          <label for="fontWeight">Peso da Fonte: </label>
+          <select name="fontWeight" id="fontWeight">
+            <option value="100">Thin</option>
+            <option value="200">Extra Light</option>
+            <option value="300">Light</option>
+            <option value="400" selected>Normal</option>
+            <option value="500">Medium</option>
+            <option value="600">Semi Bold</option>
+            <option value="700">Bold</option>
+            <option value="800">Extra Bold</option>
+            <option value="900">Black</option>
+          </select>
+        </div>
+        <div>
+          <label for="headerText">Texto do Cabeçalho:</label>
+          <input
+            type="text"
+            id="headerText"
+            name="headerText"
+            value="Gerador de Cabeçalho"
+          />
+        </div>
+        <div>
+          <label for="bannerUpload">Upload do Banner (Imagem):</label>
+          <input
+            type="file"
+            id="bannerUpload"
+            name="bannerUpload"
+            accept="image/*"
+          />
+        </div>
+        <div>
+          <label for="iconUpload">Upload do Ícone (Imagem):</label>
+          <input
+            type="file"
+            id="iconUpload"
+            name="iconUpload"
+            accept="image/*"
+          />
+        </div>
+
+        <button type="submit">Aplicar Configurações</button>
+      </form>
+    </div>
+  </body>
+</html>
