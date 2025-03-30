@@ -59,5 +59,15 @@ document.getElementById("iconUpload").addEventListener("change", (e) => {
   } else {
     headerIcon.style.display = "none"; // Se não há ícone, esconda o ícone
   }
-})
+});
 
+document.getElementById("searchBox").addEventListener("change", (e) => {
+  e.preventDefault();
+  const searchBar = document.getElementById("searchBox").value;
+  const search = document.getElementById("headerSearch");
+  if (searchBar === "true") {
+    search.style.display = "block";
+  } else {
+    search.style.display = "none";
+  }
+});

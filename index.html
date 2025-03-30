@@ -18,6 +18,7 @@
         />
         <h2 id="headerTitle">Gerador de Cabeçalho</h2>
       </div>
+      <div><input type="text" id="headerSearch" style="display: none; padding-left: 8px; padding-right: 8px; height: 20px; margin-right: 20px;" placeholder="Pesquisa"></div>
     </div>
     <div id="editor-configs">
       <h1 id="config-title">Configurações do Cabeçalho</h1>
@@ -25,7 +26,7 @@
       <form id="configForm">
         <div>
           <label for="bgColor">Cor de Fundo:</label>
-          <input type="color" id="bgColor" name="bgColor" value="#4CAF50" />
+          <input type="color" id="bgColor" name="bgColor" value="#5d584b" />
         </div>
         <div>
           <label for="textColor">Cor do Texto:</label>
@@ -64,6 +65,13 @@
             name="headerText"
             value="Gerador de Cabeçalho"
           />
+        </div>
+        <div>
+          <label for="searchBox">Barra de pesquisa: </label>
+          <select name="searchBox" id="searchBox">
+            <option value="false">Não</option>
+            <option value="true">Sim</option>
+          </select>
         </div>
         <div>
           <label for="bannerUpload">Upload do Banner (Imagem):</label>
