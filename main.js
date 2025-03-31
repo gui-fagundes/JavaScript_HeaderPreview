@@ -23,6 +23,15 @@ document.getElementById("fontWeight").addEventListener("change", (e) => {
   headerTitle.style.fontWeight = fontWeight;
 });
 
+document.getElementById("fontItalic").addEventListener("change", (e) => {
+  const isChecked = document.getElementById("fontItalic").checked;
+  if(isChecked) {
+    headerTitle.style.fontStyle = "italic";
+  } else {
+    headerTitle.style.fontStyle = "normal"
+  }
+})
+
 document.getElementById("headerText").addEventListener("change", (e) => {
   e.preventDefault();
   const headerText = document.getElementById("headerText").value;
