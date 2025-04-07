@@ -25,6 +25,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
   }
+
   
   #headerPreview {
     width: 100%;
@@ -46,7 +47,7 @@ body {
     align-items: center;
     justify-content: start;
     gap: 10px;
-    width: 100%;
+    max-width: 100%;
     margin-left: 20px;
   }
   
@@ -73,13 +74,38 @@ body {
     border: 2px solid #121212;
     border-radius: 5%;
   }
+  #linkText {
+    max-width: 100px;
+  }
+  #addButton{
+    width: 80px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 2px 1px;
+    border: 1px solid black;
+    border-radius: 10%;
+    font-size: 14px;
+  }
   #config-title {
     font-weight: bold;
     font-style: italic;
     line-height: 200%;
-
   }
 
   input {
     outline: none;
+  }
+  #menuLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    text-decoration: none;
+  }
+  #menuLinks a{
+    text-decoration: none;
+  }
+  #headerSearch {
+    max-width: 160px;
   }

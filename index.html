@@ -18,6 +18,11 @@
         />
         <h2 id="headerTitle">Gerador de Cabeçalho</h2>
       </div>
+      <div id="headerMenu">
+        <ul id="menuLinks">
+
+        </ul>
+      </div>
       <div><input type="text" id="headerSearch" style="display: none; padding-left: 8px; padding-right: 8px; height: 20px; margin-right: 20px;" placeholder="Pesquisa"></div>
     </div>
     <div id="editor-configs">
@@ -69,6 +74,26 @@
             name="headerText"
             value="Gerador de Cabeçalho"
           />
+        </div>
+        <div>
+            <label for="linkText">Menu Link: </label>
+            <input type="text" name="linkText" id="linkText">
+            <a id="addButton">Adicionar</a>
+        </div>
+        <div>
+          <label for="menuLinkFontSize">Tamanho da Fonte dos Links: </label>
+          <input
+            type="number"
+            id="menuLinkFontSize"
+            name="menuLinkFontSize"
+            value="18"
+            min="10"
+            max="40"
+          />
+        </div>
+        <div>
+          <label for="linkColor">Cor dos Links: </label>
+          <input type="color" id="linkColor" name="linkColor" value="#5d584b" />
         </div>
         <div>
           <label for="searchBox">Barra de pesquisa: </label>
